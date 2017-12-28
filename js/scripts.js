@@ -1,8 +1,8 @@
 var list = document.getElementById('list');
 var add = document.getElementById('addElem');
+var listItems = document.getElementsByTagName('li');
 add.addEventListener('click', function() {
 	var element = document.createElement('li');
-	var test = document.getElementsByTagName('li').length;
-	element.innerHTML = 'item' +' '+ test;
+	element.innerHTML = ' item ' + listItems.length;
 	list.appendChild(element);
 });
